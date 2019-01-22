@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <title>CodeMirror Adapter for LSP</title>
+    <style>
+      .editor {
+        height: 50vh;
+        overflow: auto;
+        border-bottom: 1px solid #ccc;
+        max-width: 90vw;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CodeMirror Adapter for Language Server Protocol</h1>
+
+    <p>This is a live demo of a CodeMirror editor in the browser, which is connected over
+      a web socket to a hosted Language Server which supports HTML, CSS, and JS/Typescript.
+      The <a href="https://github.com/wylieconlon/lsp-editor-adapter"></a>CodeMirror LSP adapter</a>
+      which connects these two is language agnostic, so any
+      language server should work, but are not yet enabled.
+    </p>
+
+    <p>The available features of the JS/TypeScript language server are most complete, and
+      in this demo you can see:
+    </p>
+
+    <ul>
+      <li>Highlighted syntax errors</li>
+      <li>Autocompletion with type inference</li>
+      <li>Function signature documentation with types</li>
+      <li>Hover tooltips on symbols</li>
+    </ul>
+
+    <select class="switcher" name="language">
+      <option>Javascript</option>
+      <option>HTML</option>
+      <option>CSS</option>
+    </select>
+
+    <div class="editor"></div>
+
+    <script src="/dist/main.js"></script>
+  </body>
+</html>
