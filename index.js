@@ -31,6 +31,7 @@ let editor = CodeMirror(document.querySelector('.editor'), {
   theme: 'idea',
   lineNumbers: true,
   value: sample,
+  gutters: ['CodeMirror-lsp'],
 });
 
 document.querySelector('select').addEventListener('change', () => {
