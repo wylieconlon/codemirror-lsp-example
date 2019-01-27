@@ -6,7 +6,7 @@
   "license": "ISC",
   "dependencies": {
     "codemirror": "^5.43.0",
-    "lsp-editor-adapter": "0.0.7",
+    "lsp-editor-adapter": "0.0.8",
     "rimraf": "^2.6.3"
   },
   "devDependencies": {
